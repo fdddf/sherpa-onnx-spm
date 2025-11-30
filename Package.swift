@@ -16,12 +16,12 @@ let package = Package(
         .binaryTarget(
             name: "OnnxRuntime",
             url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/v1.0.1/onnxruntime-v1.0.1.xcframework.zip",
-            checksum: "762ba422d0af17c54b1491b0a92c5829469c56fabcfab08d6371fb4fad1be69a"
+            checksum: "d5a34bb11842a56c08f00803500e1dd6b41bb7b19fd1de68d5599075bd31ab19"
         ),
         .binaryTarget(
             name: "SherpaOnnx",
             url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/v1.0.1/sherpa-onnx-v1.0.1.xcframework.zip",
-            checksum: "21239bca31c5cb47e6da4e6a4e12977f2600437799e337e3b4da771881d2c9ad",
+            checksum: "c2026d37f4eab0490a91b9bbd338109d1174c38bfc810b6adf3e27fab8a75fbf",
             condition: .when(platforms: [.iOS], environment: [.device])
         ),
     ]
