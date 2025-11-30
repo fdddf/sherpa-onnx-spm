@@ -21,7 +21,8 @@ let package = Package(
         .binaryTarget(
             name: "SherpaOnnx",
             url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/v1.0.1/sherpa-onnx.xcframework.zip",
-            checksum: "ed9f32e1511675f429c83de7a6f3f97d522a222ce954838f2dceec778ddaa4d3"
+            checksum: "ed9f32e1511675f429c83de7a6f3f97d522a222ce954838f2dceec778ddaa4d3",
+            condition: .when(platforms: [.iOS], environment: [.device])
         ),
     ]
 )
