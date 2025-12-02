@@ -20,13 +20,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "onnxruntime",
-            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.0.4/onnxruntime.xcframework.zip",
-            checksum: "1b890d9647e69f56977d55a28ed2f73370f872cbf7870da834573ec6078c7dca"
+            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.12.18/onnxruntime.xcframework.zip",
+            checksum: "a2b3ecd79151a9ffb429fb80e0d57c1d2b5a6420f468a773004bfb1a8f5fb60b"
         ),
         .binaryTarget(
             name: "sherpa_onnx",
-            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.0.4/sherpa-onnx.xcframework.zip",
-            checksum: "78ddcc235c109e77889170fae12ee65035e2b919e8e8b636f177e9aafb00b1c5"
+            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.12.18/sherpa-onnx.xcframework.zip",
+            checksum: "00cf100fe7a0608ee55596d7fc845f0f308bf088f77b40b883735c798b2edd19"
         ),
     ]
 )
