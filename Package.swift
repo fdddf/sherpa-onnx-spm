@@ -2,31 +2,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "sherpa-onnx-spm",
+    name: "VoiceNotesBinary",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "sherpa-onnx-spm",
-            targets: ["sherpa-onnx-spm"]
+            name: "VoiceNotesBinary",
+            targets: ["VoiceNotesBinary"]
         ),
     ],
     targets: [
         .target(
-            name: "sherpa-onnx-spm",
+            name: "VoiceNotesBinary",
             dependencies: ["onnxruntime", "sherpa_onnx"],
-            path: "Sources/sherpa-onnx-spm"
+            path: "Sources/VoiceNotesBinary"
         ),
         .binaryTarget(
             name: "onnxruntime",
-            url: "https://github.com/fdddf/sherpa-onnx-spm/releases/download/1.12.19/onnxruntime.xcframework.zip",
-            checksum: "457f627952efa07a6129bbed17f1142edc7cbd2af5ed9f16d688a77e67821c8b"
+            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.12.20/onnxruntime.xcframework.zip",
+            checksum: "7b1c102421485480fef63845b160a11e582507d109a6c74716389bf27e362a49"
         ),
         .binaryTarget(
             name: "sherpa_onnx",
-            url: "https://github.com/fdddf/sherpa-onnx-spm/releases/download/1.12.19/sherpa-onnx.xcframework.zip",
-            checksum: "47946ec264e3ee039f2ea9beedd1db9e908dfb6bf257063d5badd89d9c389cf6"
+            url: "https://github.com/fdddf/VoiceNotesBinary/releases/download/1.12.20/sherpa-onnx.xcframework.zip",
+            checksum: "83f762a7f55c8106a6bd81ca4af0f8ab45ddde9c45687daebe9ffca43b0a4f15"
         ),
     ]
 )
